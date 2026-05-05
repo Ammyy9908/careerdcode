@@ -109,20 +109,20 @@ export default function CareersPage() {
                 JOIN THE MISSION
               </span>
               <h1 className="text-6xl lg:text-8xl font-bold text-slate-900 font-display tracking-tight leading-[0.9] mb-8">
-                Build the Future of <br />
-                <span className="text-indigo-600">Tech Education.</span>
+              Get Job-Ready. Get Hired.  <br />
+                <span className="text-indigo-600">Not Just Trained.</span>
               </h1>
               <p className="text-slate-500 text-xl max-w-2xl mx-auto font-medium leading-relaxed mb-12">
-                We're on a mission to bridge the gap between academia and industry. 
-                Come help us empower the next generation of engineers.
+              Join Careerxp’s placement-focused programs and unlock unlimited job opportunities—even if you're a fresher or switching domains.
+
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <a 
+                {/* <a 
                   href="#openings" 
                   className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black text-xs uppercase tracking-widest shadow-2xl shadow-slate-200 hover:bg-indigo-600 transition-all"
                 >
                   View Openings
-                </a>
+                </a> */}
                 <Link 
                   href="/about" 
                   className="px-10 py-5 bg-white text-slate-900 border border-slate-200 rounded-2xl font-black text-xs uppercase tracking-widest hover:border-slate-900 transition-all"
@@ -201,14 +201,69 @@ export default function CareersPage() {
                 </div>
               </div>
               <div className="lg:w-1/2">
-                <div className="relative aspect-video rounded-[32px] overflow-hidden shadow-2xl">
-                  <img 
-                    src="https://picsum.photos/seed/office/800/600" 
-                    alt="Office Culture" 
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-indigo-600/10"></div>
+                <div className="relative aspect-video rounded-[32px] overflow-hidden border border-white/10 bg-gradient-to-br from-white/10 via-indigo-500/10 to-slate-950 shadow-2xl">
+                  <div className="absolute -top-20 -right-24 h-72 w-72 rounded-full bg-indigo-500/30 blur-3xl" />
+                  <div className="absolute -bottom-24 -left-28 h-72 w-72 rounded-full bg-violet-500/20 blur-3xl" />
+                  <div className="absolute inset-0 opacity-[0.22] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:28px_28px]" />
+
+                  <div className="relative h-full p-8 sm:p-10">
+                    <div className="flex h-full flex-col justify-between">
+                      <div className="flex items-start justify-between gap-6">
+                        <div className="space-y-3">
+                          <div className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/10 px-4 py-2 text-[10px] font-black uppercase tracking-[0.25em] text-white/90 backdrop-blur-sm">
+                            Culture snapshot
+                          </div>
+                          <div className="text-3xl sm:text-4xl font-black tracking-tight text-white font-display leading-[1.05]">
+                            Team-first
+                            <span className="text-indigo-200">.</span>
+                          </div>
+                          <p className="max-w-sm text-sm sm:text-base font-medium text-slate-200/90 leading-relaxed">
+                            A high-ownership team with real impact and real growth.
+                          </p>
+                        </div>
+
+                        <div className="hidden sm:flex shrink-0 flex-col gap-3">
+                          {[
+                            { label: "Mentorship", value: "Always on" },
+                            { label: "Ownership", value: "High trust" },
+                            { label: "Growth", value: "Fast track" },
+                          ].map((item) => (
+                            <div
+                              key={item.label}
+                              className="w-44 rounded-3xl border border-white/10 bg-white/10 p-4 shadow-sm backdrop-blur-sm"
+                            >
+                              <div className="text-[10px] font-black uppercase tracking-[0.22em] text-white/60">
+                                {item.label}
+                              </div>
+                              <div className="mt-1 font-display text-lg font-black text-white">
+                                {item.value}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* <div className="grid grid-cols-3 gap-4">
+                        {[
+                          { title: "Flexible", subtitle: "work hours" },
+                          { title: "Learning", subtitle: "culture" },
+                          { title: "Remote", subtitle: "friendly" },
+                        ].map((pill) => (
+                          <div
+                            key={pill.title}
+                            className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 text-center backdrop-blur-sm"
+                          >
+                            <div className="text-sm sm:text-base font-black text-white font-display">
+                              {pill.title}
+                            </div>
+                            <div className="mt-0.5 text-[10px] font-black uppercase tracking-[0.22em] text-white/60">
+                              {pill.subtitle}
+                            </div>
+                          </div>
+                        ))}
+                      </div> */}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -216,7 +271,7 @@ export default function CareersPage() {
         </section>
 
         {/* Open Positions Section */}
-        <section id="openings" className="py-24 bg-white">
+        {/* <section id="openings" className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20">
               <span className="text-[10px] font-black uppercase tracking-[0.4em] text-indigo-600 font-display mb-4 block">
@@ -286,7 +341,7 @@ export default function CareersPage() {
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   );

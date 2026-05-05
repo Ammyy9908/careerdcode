@@ -76,13 +76,19 @@ export default function AboutClient() {
                 <h2 className="text-5xl font-bold text-slate-900 mb-8 font-display tracking-tight leading-tight">Bridging the Gap Between Learning & Hiring.</h2>
                 <div className="space-y-6 text-lg text-slate-500 leading-relaxed font-medium">
                   <p>
-                    At CareerXP, our mission is to bridge the gap between traditional learning and real-world hiring by building a structured, practical, and outcome-driven path for every student.
+                    At Careerxp, we don’t just train—you get access to opportunities.
                   </p>
                   <p>
-                    We are equally committed to making high-quality tech training accessible to students from all sections of society — which is why we offer programs at a fraction of the cost compared to traditional market offerings, without compromising on quality or outcomes.
+                    We combine:
                   </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Practical, industry-aligned training</li>
+                    <li>Direct hiring drives with companies</li>
+                    <li>Continuous placement support</li>
+                  </ul>
                   <p className="text-slate-900 font-bold">
-                    Quality learning shouldn’t be a privilege — we’re making it accessible, practical, and career-focused for everyone.
+                  So you’re not just learning…
+                  👉 You’re moving towards a job from Day 1
                   </p>
                 </div>
               </motion.div>
@@ -92,13 +98,77 @@ export default function AboutClient() {
                 viewport={{ once: true }}
                 className="relative"
               >
-                <img 
-                  src="https://picsum.photos/seed/mission-vision/800/600" 
-                  alt="Our Mission" 
-                  className="rounded-[32px] shadow-2xl"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute -bottom-8 -left-8 p-8 bg-white rounded-3xl shadow-xl border border-slate-100 hidden lg:block">
+                <div className="relative overflow-hidden rounded-[32px] border border-slate-200 bg-gradient-to-br from-white via-indigo-50/60 to-slate-50 shadow-2xl">
+                  <div className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-indigo-300/40 blur-3xl" />
+                  <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-violet-300/30 blur-3xl" />
+                  <div className="absolute inset-0 opacity-[0.35] bg-[radial-gradient(#4F46E5_1px,transparent_1px)] [background-size:26px_26px]" />
+
+                  <div className="relative p-10 sm:p-12">
+                    <div className="flex items-center justify-between gap-6">
+                      <div className="space-y-3">
+                        <div className="inline-flex items-center gap-2 rounded-2xl border border-indigo-200/70 bg-white/70 px-4 py-2 text-[10px] font-black uppercase tracking-[0.25em] text-indigo-700 backdrop-blur-sm">
+                          Mission map
+                        </div>
+                        <div className="text-3xl sm:text-4xl font-black tracking-tight text-slate-900 font-display leading-[1.05]">
+                          Learn.
+                          <span className="text-indigo-600"> Build.</span>
+                          <span className="text-slate-900"> Get hired.</span>
+                        </div>
+                        <p className="max-w-sm text-sm sm:text-base font-medium text-slate-600 leading-relaxed">
+                          Practical training + hiring drives + continuous placement support.
+                        </p>
+                      </div>
+
+                      <div className="hidden sm:flex shrink-0 flex-col gap-4">
+                        <div className="w-44 rounded-3xl border border-slate-200/80 bg-white/70 p-5 shadow-sm backdrop-blur-sm">
+                          <div className="mb-2 text-[10px] font-black uppercase tracking-[0.22em] text-slate-400">
+                            Training
+                          </div>
+                          <div className="h-2 w-full rounded-full bg-slate-100 overflow-hidden">
+                            <div className="h-full w-[78%] rounded-full bg-indigo-600" />
+                          </div>
+                        </div>
+                        <div className="w-44 rounded-3xl border border-slate-200/80 bg-white/70 p-5 shadow-sm backdrop-blur-sm">
+                          <div className="mb-2 text-[10px] font-black uppercase tracking-[0.22em] text-slate-400">
+                            Opportunities
+                          </div>
+                          <div className="h-2 w-full rounded-full bg-slate-100 overflow-hidden">
+                            <div className="h-full w-[62%] rounded-full bg-violet-600" />
+                          </div>
+                        </div>
+                        <div className="w-44 rounded-3xl border border-slate-200/80 bg-white/70 p-5 shadow-sm backdrop-blur-sm">
+                          <div className="mb-2 text-[10px] font-black uppercase tracking-[0.22em] text-slate-400">
+                            Placement
+                          </div>
+                          <div className="h-2 w-full rounded-full bg-slate-100 overflow-hidden">
+                            <div className="h-full w-[70%] rounded-full bg-emerald-600" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="mt-10 grid grid-cols-3 gap-4 sm:gap-6">
+                      {[
+                        { label: "Industry-aligned", value: "Practical" },
+                        { label: "Hiring drives", value: "Direct" },
+                        { label: "Until hired", value: "Support" },
+                      ].map((item) => (
+                        <div
+                          key={item.label}
+                          className="rounded-3xl border border-slate-200/80 bg-white/70 p-5 text-center shadow-sm backdrop-blur-sm"
+                        >
+                          <div className="text-xl sm:text-2xl font-black text-slate-900 font-display">
+                            {item.value}
+                          </div>
+                          <div className="mt-1 text-[10px] font-black uppercase tracking-[0.22em] text-slate-400">
+                            {item.label}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="absolute -bottom-8 -left-8 p-8 bg-white rounded-3xl shadow-xl border border-slate-100 hidden lg:block">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white">
                       <ShieldCheck size={24} />
@@ -108,7 +178,7 @@ export default function AboutClient() {
                       <div className="text-sm text-slate-500">Founded by Industry Experts</div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </motion.div>
             </div>
           </div>
