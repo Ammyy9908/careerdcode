@@ -1,7 +1,7 @@
 export const seoConfig = {
   defaultTitle: "CareerXP | Placement Drives, Tech Training & Career Support",
   titleTemplate: "%s | CareerXP",
-  description: "CareerXP offers industry-aligned tech education, elite mentorship from IIT Delhi alumni, and career-transforming courses in Full Stack Development, Data Science, and AI.",
+  description: "CareerXP is a placement-first employability platform connecting students, colleges and hiring companies through genuine placement drives, practical preparation and career support.",
   canonical: "https://careerxp.in", // Replace with actual domain if different
   openGraph: {
     type: 'website',
