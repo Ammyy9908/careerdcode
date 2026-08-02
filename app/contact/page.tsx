@@ -64,10 +64,10 @@ export default function ContactPage() {
                   <div className="space-y-1">
                     <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Call Us</p>
                     <a
-                      href="tel:+917980444047"
+                      href="tel:+919231063994"
                       className="text-lg font-bold text-slate-900 hover:text-indigo-600 transition-colors"
                     >
-                      +91 7980444047
+                      +91 9231063994
                     </a>
                     <p className="text-sm text-slate-500">Mon-Sat, 10am to 7pm IST</p>
                   </div>
