@@ -141,6 +141,9 @@ export default function Footer({ onCallbackClick, onBrochureClick,hideCTA = fals
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
               © 2026 CareerXP Technologies Private Limited. All Rights Reserved.
             </p>
+            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+  CIN: U78100JH2026PTC027558
+</p>
             <div className="flex gap-8">
               <Link href="/terms" className="text-[10px] font-black text-slate-400 uppercase tracking-widest hover:text-indigo-600 transition-colors">Terms</Link>
               <Link href="/privacy" className="text-[10px] font-black text-slate-400 uppercase tracking-widest hover:text-indigo-600 transition-colors">Privacy</Link>
