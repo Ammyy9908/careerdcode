@@ -50,9 +50,10 @@ export default function Footer({ onCallbackClick, onBrochureClick,hideCTA = fals
   href={social.href}
   target="_blank"
   rel="noopener noreferrer"
-  className={`w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center text-slate-400 transition-all hover:bg-white hover:shadow-2xl hover:shadow-slate-200 ${social.color}`} target="_blank" rel="noopener noreferrer">
-                  <social.icon size={20} />
-                </a>
+  className="w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center text-slate-400 transition-all hover:bg-white hover:shadow-md"
+>
+  <social.icon size={20} />
+</a>
               ))}
             </div>
           </div>
