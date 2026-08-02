@@ -42,10 +42,15 @@ export default function Footer({ onCallbackClick, onBrochureClick,hideCTA = fals
             <div className="flex gap-4">
               {[
                 { icon: Instagram, color: 'hover:text-rose-500', href: 'https://www.instagram.com/careerxp_/' },
-                { icon: Linkedin, color: 'hover:text-indigo-700', href: ' https://www.linkedin.com/in/career-xp-5114a63ba' },
+                { icon: Linkedin, color: 'hover:text-indigo-700', href: 'https://www.linkedin.com/company/careerxp/' },
                 { icon: Facebook, color: 'hover:text-indigo-600', href: 'https://www.facebook.com/profile.php?id=61577590602666' },
               ].map((social, idx) => (
-                <a key={idx} href={social.href} className={`w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center text-slate-400 transition-all hover:bg-white hover:shadow-2xl hover:shadow-slate-200 ${social.color}`} target="_blank" rel="noopener noreferrer">
+                <a
+  key={idx}
+  href={social.href}
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center text-slate-400 transition-all hover:bg-white hover:shadow-2xl hover:shadow-slate-200 ${social.color}`} target="_blank" rel="noopener noreferrer">
                   <social.icon size={20} />
                 </a>
               ))}
