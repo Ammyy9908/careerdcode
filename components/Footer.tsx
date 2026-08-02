@@ -139,7 +139,7 @@ export default function Footer({ onCallbackClick, onBrochureClick,hideCTA = fals
         <div className="pt-16 border-t border-slate-100 flex flex-col lg:flex-row justify-between items-center gap-12">
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
-              © 2026 CareerXP. All Rights Reserved
+              © 2026 CareerXP Technologies Private Limited. All Rights Reserved.
             </p>
             <div className="flex gap-8">
               <Link href="/terms" className="text-[10px] font-black text-slate-400 uppercase tracking-widest hover:text-indigo-600 transition-colors">Terms</Link>
