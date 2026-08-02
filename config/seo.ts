@@ -1,5 +1,5 @@
 export const seoConfig = {
-  defaultTitle: "CareerXP | Built on real hires not assumptions",
+  defaultTitle: "CareerXP | Placement Drives, Tech Training & Career Support",
   titleTemplate: "%s | CareerXP",
   description: "CareerXP offers industry-aligned tech education, elite mentorship from IIT Delhi alumni, and career-transforming courses in Full Stack Development, Data Science, and AI.",
   canonical: "https://careerxp.in", // Replace with actual domain if different
